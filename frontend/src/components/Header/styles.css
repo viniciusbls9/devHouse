@@ -1,13 +1,11 @@
 .page-header {
     width: 100vw;
     display: flex;
-    /* background-color: #00f; */
 }
 
 .container-header {
     width: 90%;
     height: 80px;
-    /* background-color: #fff; */
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -42,6 +40,6 @@
     color: var(--color-line-in-white);
 }
 
-.container-header .right-side li:first-of-type {
+.container-header .right-side ul a:first-child {
     margin-right: 13px;
 }
