@@ -11,6 +11,7 @@
 
 .content-home h1 {
     font: 500 20px Roboto;
+    color: var(--color-button-text);
 }
 
 .houses-content {
@@ -32,7 +33,34 @@
     margin-bottom: 12px;
 }
 
+.houses-content .house-infos .house-address {
+    display: flex;
+    margin-top: 12px;
+}
+
+.houses-content .house-infos .house-address img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
 .houses-content .house-infos span {
-    color: #aaaaaa;
+    color: var(--color-text-complement);
     font: 500 16px Roboto;
+}
+
+.houses-content .house-infos .house-value {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.houses-content .house-infos .house-value span {
+    color: var(--color-background);
+}
+
+.houses-content .house-infos .house-value button {
+    padding: 10px 35px 10px 35px;
+    background-color: var(--color-background);
+    color: var(--color-button-text);
 }
