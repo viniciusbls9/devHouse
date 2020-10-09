@@ -16,6 +16,12 @@
 
 .container-header .left-side img {
     height: 50px;
+    transition: all ease .2s;
+}
+
+.container-header .left-side img:hover {
+    height: 50px;
+    opacity: .6;
 }
 
 .container-header .right-side ul {
@@ -23,6 +29,17 @@
     text-align: center;
     display: flex;
     color: var(--color-button-text);
+}
+
+.container-header .right-side ul a {
+    text-decoration: none;
+    color: var(--color-button-text);
+    transition: all ease .2s;
+}
+
+.container-header .right-side ul a:hover {
+    text-decoration: none;
+    color: var(--color-line-in-white);
 }
 
 .container-header .right-side li:first-of-type {
