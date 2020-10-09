@@ -1,0 +1,30 @@
+.page-header {
+    width: 100vw;
+    display: flex;
+    /* background-color: #00f; */
+}
+
+.container-header {
+    width: 90%;
+    height: 80px;
+    /* background-color: #fff; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-header .left-side img {
+    height: 50px;
+}
+
+.container-header .right-side ul {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    color: var(--color-button-text);
+}
+
+.container-header .right-side li:first-of-type {
+    margin-right: 13px;
+}
