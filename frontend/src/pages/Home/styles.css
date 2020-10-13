@@ -24,46 +24,46 @@
     margin-bottom: 12px;
 }
 
-.houses-content .house-infos {
+.house-infos {
     width: 100%;
     max-width: 370px;
     margin: 0 auto;
     margin-bottom: 20px;
 }
 
-.houses-content .house-infos img {
+.house-infos img {
     width: 100%;
     height: 240px;
     margin-bottom: 12px;
 }
 
-.houses-content .house-infos .house-address {
+.house-infos .house-address {
     display: flex;
     margin-top: 12px;
 }
 
-.houses-content .house-infos .house-address img {
+.house-infos .house-address img {
     width: 20px;
     height: 20px;
     margin-right: 5px;
 }
 
-.houses-content .house-infos span {
+.house-infos span {
     color: var(--color-text-complement);
     font: 500 16px Roboto;
 }
 
-.houses-content .house-infos .house-value {
+.house-infos .house-value {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.houses-content .house-infos .house-value span {
+.house-infos .house-value span {
     color: var(--color-background);
 }
 
-.houses-content .house-infos .house-value button {
+.house-infos .house-value button {
     padding: 10px 35px 10px 35px;
     background-color: var(--color-background);
     color: var(--color-button-text);
@@ -79,34 +79,31 @@
     margin-bottom: 12px;
 }
 
-.reserves .left-side {
+.left-side {
     width: 100%;
     max-width: 370px;
 }
 
-.reserves .left-side img {
+.left-side img {
     width: 100%;
     height: 240px;
     margin-bottom: 12px;
 }
 
-.reserves .right-side {
-}
-
-.reserves .right-side img {
+.right-side img {
     width: 20px;
     height: 20px;
     margin-right: 5px;
 }
 
-.reserves .right-side .reserve-infos {
+.right-side .reserve-infos {
     display: flex;
     align-items: center;
     color: var(--color-background);
     margin-bottom: 10px;
 }
 
-.reserves .right-side button {
+.right-side button {
     padding: 10px 35px 10px 35px;
     background-color: var(--color-danger);
     color: var(--color-button-text);
