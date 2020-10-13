@@ -4,7 +4,6 @@
     align-items: center;
     margin: 0 15px 0 15px;
     width: 100%;
-    /* background-color: #0f0; */
 }
 
 .container-login .input-block {
@@ -13,13 +12,11 @@
     flex-direction: column;
 }
 
-.container-login .input-block form {
+.container-login form {
     width: 100%;
 }
 
 .container-login input {
-    width: 100%;
-    /* max-width: 400px; */
     height: 40px;
     padding: 10px;
     margin-bottom: 12px;
