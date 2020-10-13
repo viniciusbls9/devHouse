@@ -24,6 +24,10 @@ const Header: React.FC = () => {
                         <Link to="">
                             <li>Minhas reservas</li>
                         </Link>
+
+                        <Link to="">
+                            <li>Sair</li>
+                        </Link>
                     </ul>
                 </div>
             </div>

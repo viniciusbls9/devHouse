@@ -39,6 +39,6 @@
     color: var(--color-line-in-white);
 }
 
-.container-header .right-side ul a:first-child {
+.container-header .right-side ul a:nth-child( -n + 2 ) {
     margin-right: 13px;
 }
