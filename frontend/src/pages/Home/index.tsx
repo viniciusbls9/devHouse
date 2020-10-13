@@ -6,7 +6,6 @@ import marker from '../../assets/marker.svg';
 import calendar from '../../assets/calendar.svg';
 
 import './styles.css';
-import HousesContent from '../../components/HousesContent';
 
 const Home: React.FC = () => {
     return (
@@ -16,7 +15,7 @@ const Home: React.FC = () => {
             <div className="content-home">
                 <h1>Reserve casas, hotéis e muito mais...</h1>
 
-                <HousesContent>
+                <div className="houses-content">
                     <div className="house-infos">
                         <img src={foto} alt="" />
                         <span>Casa bem grande com piscina aquecida, com 3 quartos e 1 suite</span>
@@ -42,10 +41,10 @@ const Home: React.FC = () => {
                             <button>Reservar</button>
                         </div>
                     </div>
-                </HousesContent>
+                </div>
 
                 <h2>Minhas Reservas</h2>
-                <HousesContent>
+                <div className="reserves">
                     <div className="left-side">
                         <img src={foto} alt="" />
                     </div>
@@ -58,12 +57,12 @@ const Home: React.FC = () => {
 
                         <div className="reserve-infos">
                             <img src={marker} alt="Marker" />
-                            <span>Rua 50, Meia praia SC</span>
+                            <span>20 Fevereiro 2020</span>
                         </div>
 
                         <button>Cancelar</button>
                     </div>
-                </HousesContent>
+                </div>
             </div>
         </div>
     );

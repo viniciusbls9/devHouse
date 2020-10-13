@@ -9,7 +9,7 @@ const Header: React.FC = () => {
     return (
         <div className="page-header">
             <div className="container-header">
-                <div className="left-side">
+                <div className="left">
                     <Link to="/home">
                         <img src={logo} alt="" />
 
@@ -17,11 +17,11 @@ const Header: React.FC = () => {
                 </div>
                 <div className="right-side">
                     <ul>
-                        <Link to="">
+                        <Link to="/home">
                             <li>Home</li>
                         </Link>
 
-                        <Link to="">
+                        <Link to="/reserves">
                             <li>Minhas reservas</li>
                         </Link>
 

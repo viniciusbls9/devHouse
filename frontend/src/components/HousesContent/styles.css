@@ -1,9 +1,0 @@
-.houses-content {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--color-box-footer);
-    margin-top: 12px;
-    padding: 18px 20px 18px 20px;
-    margin-bottom: 12px;
-}

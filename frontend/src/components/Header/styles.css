@@ -11,12 +11,12 @@
     align-items: center;
 }
 
-.container-header .left-side img {
+.container-header .left img {
     height: 50px;
     transition: all ease .2s;
 }
 
-.container-header .left-side img:hover {
+.container-header .left img:hover {
     height: 50px;
     opacity: .6;
 }
