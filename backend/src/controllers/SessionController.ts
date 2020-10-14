@@ -4,13 +4,12 @@ import User from '../models/User';
 
 export default class SessionController {
     async store(req: Request, res: Response) {
-        const { email } = req.body;
+        const { name, email } = req.body;
 
         let user = await User.findOne({ email });
 
         if(!user) {
-            user = await User.create({ email });
-
+            user = await User.create({ name, email });
         }
         return res.json(user);
     }
