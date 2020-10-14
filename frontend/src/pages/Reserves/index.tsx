@@ -12,7 +12,7 @@ const MyHouses: React.FC = () => {
         <div className="page-content">
             <Header />
 
-            <div className="content-home">
+            <div className="content-reserves">
                 <h1>Reserve casas, hotéis e muito mais...</h1>
 
                 <div className="houses-content">

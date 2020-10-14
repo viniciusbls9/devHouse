@@ -67,6 +67,13 @@
     padding: 10px 35px 10px 35px;
     background-color: var(--color-background);
     color: var(--color-button-text);
+    cursor: pointer;
+    transition: all ease .2s;
+}
+
+.houses-content .house-infos .house-value button:hover {
+    background-color: var(--color-primary-dark);
+
 }
 
 .reserves {
@@ -107,4 +114,42 @@
     padding: 10px 35px 10px 35px;
     background-color: var(--color-danger);
     color: var(--color-button-text);
+}
+
+@media(min-width: 1000px) {
+
+    .houses-content {
+        flex-direction: row;
+        justify-content: flex-start;
+        overflow-x: scroll;
+
+    }
+
+    .houses-content .house-infos {
+        margin: 0;
+        padding-right: 20px;
+        width: 370px;
+    }
+
+    .reserves {
+        flex-direction: row;
+        overflow-x: scroll;
+    }
+    
+    .single-reserve {
+
+    }
+
+    .reserves .left-side img {
+        height: 200px;
+    }
+
+    .reserves .right-side {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .reserves .right-side .reserve-infos {
+        margin-bottom: 30px;
+    }
 }

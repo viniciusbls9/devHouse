@@ -27,3 +27,9 @@
     height: 40px;
     border-radius: 5px;
 }
+
+@media(min-width: 1000px) {
+    .container-login {
+        width: 70%;
+    }
+}

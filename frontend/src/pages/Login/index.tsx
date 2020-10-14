@@ -1,6 +1,5 @@
 import React from 'react';
 import logo from '../../assets/logoo.png';
-
 import './styles.css';
 
 const Login: React.FC = () => {

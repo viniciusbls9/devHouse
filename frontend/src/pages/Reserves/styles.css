@@ -3,11 +3,17 @@
     height: 100vh;
 }
 
-.content-home {
+.content-reserves {
     width: 90%;
     margin: 0 auto;
     margin-top: 40px;
 }
+
+.content-reserves h1, h2 {
+    font: 500 20px Roboto;
+    color: var(--color-button-text);
+}
+
 
 .house-infos-reserves {
     max-width: 370px;
