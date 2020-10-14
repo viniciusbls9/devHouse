@@ -32,6 +32,23 @@ const MyHouses: React.FC = () => {
                             <button>Reservar</button>
                         </div>
                     </div>
+
+                    <div className="house-infos-reserves">
+                        
+                        <img src={foto} alt="" />
+                        <span>Casa bem grande com piscina aquecida, com 3 quartos e 1 suite</span>
+                        <div className="house-address">
+                            <img src={marker} alt="Lixeira" />
+                            <span>Avenida 19, São Paulo</span>
+                        </div>
+                        <div className="house-value-reserves">
+                            <span>R$ 1000,00 / Dia</span>
+                            <button>
+                                <img src={trash} alt=""/>
+                            </button>
+                            <button>Reservar</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
