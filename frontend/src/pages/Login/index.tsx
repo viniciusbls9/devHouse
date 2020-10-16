@@ -32,8 +32,8 @@ const Login: React.FC = () => {
 
             <form>
                 <div className="input-block">
-                    <input type="text" placeholder="Digite seu nome" />
-                    <input type="text" placeholder="Digite seu e-mail" />
+                    <input type="text" placeholder="Digite seu nome" value={name} onChange={(e) => setName(e.target.value) } />
+                    <input type="text" placeholder="Digite seu e-mail" value={email} onChange={(e) => setEmail(e.target.value) } />
                     <button type="submit" onClick={handleLogin}>Acessar</button>
                 </div>
             </form>
