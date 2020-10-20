@@ -19,6 +19,7 @@
     --color-box-footer: #fafafc;
     --color-input-home: rgba(255,255,255, 0.5);
     --color-danger: #FF0000;
+    --color-danger-dark: #d10000;
 }
 
 * {
@@ -39,6 +40,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+button {
+    cursor: pointer;
 }
 
 body,

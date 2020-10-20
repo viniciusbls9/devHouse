@@ -14,9 +14,13 @@
     color: var(--color-button-text);
 }
 
+.single-reserve {
+    max-width: 370px;
+    margin: 0 auto;
+}
 
 .house-infos-reserves {
-    max-width: 370px;
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 20px;
 }
@@ -58,6 +62,11 @@
     background-color: var(--color-background);
     color: var(--color-button-text);
     margin-left: 10px;
+    transition: all ease .2s;
+}
+
+.house-infos-reserves .house-value-reserves button:last-child:hover {
+    background-color: var(--color-primary-dark);
 }
 .house-infos-reserves .house-value-reserves button {
     background-color: var(--color-danger);
@@ -66,9 +75,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all ease .2s;
+}
+
+.house-infos-reserves .house-value-reserves button:hover {
+    background-color: var(--color-danger-dark);
 }
 
 .house-infos-reserves .house-value-reserves button img {
     width: 20px;
     height: 20px;
+}
+
+@media(min-width: 1000px) {
+    .content-reserves {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    
+    .house-infos-reserves {
+        padding-right: 10px;
+        width: 370px;
+    }
 }
