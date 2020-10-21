@@ -14,7 +14,6 @@ const MyHouses: React.FC = () => {
 
             <div className="content-reserves">
                 <h1>Reserve casas, hotéis e muito mais...</h1>
-
                 <div className="houses-content">
                     <div className="single-reserve">
                         <div className="house-infos-reserves">

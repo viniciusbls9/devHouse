@@ -16,7 +16,7 @@ const Login: React.FC = () => {
         e.preventDefault();
 
         try {
-            const response = await api.post('session', { name, email });
+            await api.post('session', { name, email });
 
             localStorage.setItem('username', name);
 

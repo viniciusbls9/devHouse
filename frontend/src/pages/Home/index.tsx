@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from '../../components/Header';
+import api from '../../services/api';
+import { useHistory } from 'react-router-dom';
 
 import foto from '../../assets/foto.jpg';
 import marker from '../../assets/marker.svg';
@@ -7,7 +9,28 @@ import calendar from '../../assets/calendar.svg';
 
 import './styles.css';
 
+interface HouseProps {
+    id: string;
+    thumbnail_url: string;
+    description: string;
+    price: number;
+    location: string;
+    status: boolean;
+}
+
 const Home: React.FC = () => {
+
+    const history = useHistory();
+
+    const [houses, setHouses] = useState<HouseProps[]>([]);
+
+    useEffect(() => {
+        api.get('/houses?status=false').then(response => {
+            console.log(response.data);
+            setHouses(response.data);
+        });
+    }, []);
+
     return (
         <div className="page-home">
             <Header />
@@ -15,37 +38,27 @@ const Home: React.FC = () => {
             <div className="content-home">
                 <h1>Reserve casas, hotéis e muito mais...</h1>
 
-
                 <div className="houses-content">
-                    <div className="single-house">
-                        <div className="house-infos">
-                            <img src={foto} alt="" />
-                            <span>Casa bem grande com piscina aquecida, com 3 quartos e 1 suite</span>
-                            <div className="house-address">
-                                <img src={marker} alt="Marker" />
-                                <span>Avenida 19, São Paulo</span>
+                    {houses === [] ?
+                        houses.map((house) => (
+                            <div className="single-house" key={house.id}>
+                                <div className="house-infos">
+                                    <img src={house.thumbnail_url} alt="" />
+                                    <span>{house.description}</span>
+                                    <div className="house-address">
+                                        <img src={marker} alt="Marker" />
+                                        <span>{house.location}</span>
+                                    </div>
+                                    <div className="house-value">
+                                        <span>R$ {house.price} / Dia</span>
+                                        <button>Reservar</button>
+                                    </div>
+                                </div>
                             </div>
-                            <div className="house-value">
-                                <span>R$ 1000,00 / Dia</span>
-                                <button>Reservar</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="single-house">
-                        <div className="house-infos">
-                            <img src={foto} alt="" />
-                            <span>Casa bem grande com piscina aquecida, com 3 quartos e 1 suite</span>
-                            <div className="house-address">
-                                <img src={marker} alt="Marker" />
-                                <span>Avenida 19, São Paulo</span>
-                            </div>
-                            <div className="house-value">
-                                <span>R$ 1000,00 / Dia</span>
-                                <button>Reservar</button>
-                            </div>
-                        </div>
-                    </div>
+                        ))
+                        :
+                            <p>sd</p>
+                    }
                 </div>
 
 
@@ -73,7 +86,7 @@ const Home: React.FC = () => {
                         </div>
                     </div>
 
-                    
+
                 </div>
 
             </div>
