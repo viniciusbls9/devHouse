@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://github.com/viniciusbls9/financeapp/blob/master/.github/logo3x.png" />
+  <img src="https://github.com/viniciusbls9/devHouse/blob/master/frontend/git/dev.png" />
 </h1>
 
 # devHouse
